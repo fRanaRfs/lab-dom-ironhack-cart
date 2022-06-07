@@ -24,29 +24,18 @@ function calculateAll()  {
 
 
 
-//// For each para recorrer updateSubtotal ////
  let allItems = document.querySelectorAll('.product');
  allItems.forEach((item)=>{updateSubtotal(item)});
-//////////////////////////////////////////////
+
 let productsElements = document.querySelectorAll('.product');
 let total = updateSubtotal(productsElements[0]);
+let totals = updateSubtotal(productsElements[1]);
 let totalElement = document.querySelector('#total-value span');
-totalElement.innerText = total;
+totalElement.innerText = total + totals;
 
 
 
 
-//let totalValueElement = document.querySelector('#total-value span');
-//let totalValue = Number (totalValueElement.value);
-//let total = totalValue + totalValueElement.innerText;
-//return total;
-
-
-  // ITERATION 2
-  //... your code goes here
-
-  // ITERATION 3
-  //... your code goes here
 }
 
 // ITERATION 4
